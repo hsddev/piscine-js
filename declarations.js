@@ -1,6 +1,6 @@
 var escapeStr = "'" + "\\" + "`" + "/" + '"';
 console.log(escapeStr);
-var arr = [4, 2];
+var arr = [4, "2"];
 var obj = {
     str: "Hello world",
     num: 30,
