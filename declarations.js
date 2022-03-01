@@ -1,13 +1,13 @@
 var escapeStr = "'" + "\\" + "`" + "/" + '"';
-var arr = [4, "2"];
-var obj = {
+const arr = [4, "2"];
+const obj = {
     str: "Hello world",
     num: 30,
     bool: true,
     undef: undefined,
 };
 
-var nested = {
+const nested = {
     arr: [4, undefined, "2"],
     obj: {
         str: "Hey",
