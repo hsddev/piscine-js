@@ -1,5 +1,4 @@
 var escapeStr = "'" + "\\" + "`" + "/" + '"';
-console.log(escapeStr);
 var arr = [4, "2"];
 var obj = {
     str: "Hello world",
