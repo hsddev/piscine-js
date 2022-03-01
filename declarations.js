@@ -1,6 +1,6 @@
 var escapeStr = "'" + "\\" + "`" + "/" + '"';
-const arr = [4, "2"];
-const obj = {
+var arr = [4, "2"];
+var obj = {
     str: "Hello world",
     num: 30,
     bool: true,
@@ -15,3 +15,7 @@ const nested = {
         bool: false,
     },
 };
+
+Object.freeze(arr);
+Object.freeze(obj);
+Object.freeze(nested);
