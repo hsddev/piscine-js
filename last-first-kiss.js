@@ -5,4 +5,4 @@ const first = (arr) => arr[0];
 const last = (arr) => arr[arr.length - 1];
 
 // a kiss function that returns an array of 2 elements the last and the first element, in that order
-const kiss = (first, last) => [last, first];
+const kiss = (arr) => [arr[arr.length - 1], arr[0]];
