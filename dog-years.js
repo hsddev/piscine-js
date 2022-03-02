@@ -1,6 +1,6 @@
 // Function to calculate dog's age
 const dogYears = (planet, age) => {
-    const ageInEarthYears = (age / 31557600) * 7;
+    const ageInEarthYears = Math.round((age / 31557600) * 7 * 100) / 100;
 
     let ageInYears;
 
@@ -40,3 +40,5 @@ const dogYears = (planet, age) => {
     }
     return ageInYears;
 };
+
+console.log(dogYears("earth", 1000000000));
