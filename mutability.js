@@ -1,5 +1,3 @@
-var person = {};
-
 person.country = "FR";
 person.age = 17;
 
