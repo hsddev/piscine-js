@@ -11,34 +11,34 @@ const dogYears = (planet, age) => {
             break;
         // mercury : orbital period 0.2408467 Earth years
         case "mercury":
-            ageInYears = ageInEarthYears * 0.2408467;
+            ageInYears = Math.round((ageInEarthYears / 0.2408467) * 100) / 100;
             break;
         // venus : orbital period 0.61519726 Earth years
         case "venus":
-            ageInYears = ageInEarthYears * 0.2408467;
+            ageInYears = Math.round((ageInEarthYears / 0.2408467) * 100) / 100;
             break;
         // mars : orbital period 1.8808158 Earth years
         case "mars":
-            ageInYears = ageInEarthYears * 1.8808158;
+            ageInYears = Math.round((ageInEarthYears / 1.8808158) * 100) / 100;
             break;
         // jupiter : orbital period 11.862615 Earth years
         case "jupiter":
-            ageInYears = ageInEarthYears * 11.862615;
+            ageInYears = Math.round((ageInEarthYears / 11.862615) * 100) / 100;
             break;
         // saturn : orbital period 29.447498 Earth years
         case "saturn":
-            ageInYears = ageInEarthYears * 29.447498;
+            ageInYears = Math.round((ageInEarthYears / 29.447498) * 100) / 100;
             break;
         // uranus : orbital period 84.016846 Earth years
         case "uranus":
-            ageInYears = ageInEarthYears * 84.016846;
+            ageInYears = Math.round((ageInEarthYears / 84.016846) * 100) / 100;
             break;
         // neptune : orbital period 164.79132 Earth years
         case "neptune":
-            ageInYears = ageInEarthYears * 164.79132;
+            ageInYears = Math.round((ageInEarthYears / 164.79132) * 100) / 100;
             break;
     }
     return ageInYears;
 };
 
-console.log(dogYears("earth", 1000000000));
+console.log(dogYears("mercury", 2134835688));
