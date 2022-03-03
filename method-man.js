@@ -1,5 +1,5 @@
 // words function that takes a string and split it into an array of strings on spaces
-const words = (str) => str.split("");
+const words = (str) => str.split(" ");
 
 // sentence function that takes an array of strings and join them with spaces
 const sentence = (arr) => arr.join("");
