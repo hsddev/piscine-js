@@ -13,13 +13,13 @@ const whisper = (str) => "*" + str.toLowerCase() + "*";
 // Create a capitalize function that takes a string and transforms it to upper case only for the first letter, and in lowercase for the rest of the string
 const capitalize = (str) => {
     // Split the string in array for easy access/manipulation by indexing
-    Split_String = str.split("");
+    var Split_String = str.split("");
     // Target the first word
     Split_String[0] = Split_String[0].toUpperCase();
     // Target the last word
     Split_String[Split_String.length - 1] =
         Split_String[Split_String.length - 1].toUpperCase();
     // Join the array into a single word
-    Joined_Back = Split_String.join("");
+    var Joined_Back = Split_String.join("");
     return Joined_Back;
 };
