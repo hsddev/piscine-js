@@ -2,7 +2,7 @@
 const words = (str) => str.split(" ");
 
 // sentence function that takes an array of strings and join them with spaces
-const sentence = (arr) => arr.join("");
+const sentence = (arr) => arr.join(" ");
 
 // yell function that take a string and return it in upper case
 const yell = (str) => str.toUpperCase();
