@@ -2,4 +2,4 @@
 const isPositive = (num) => (num > 0 ? true : false);
 
 // abs function that takes one number argument and returns its absolute value. You are not allowed to use Math.abs, make your own.
-const abs = (num) => Math.abs(num);
+const abs = (num) => (num < 0 ? -num : num);
