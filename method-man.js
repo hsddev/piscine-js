@@ -11,6 +11,7 @@ const yell = (str) => str.toUpperCase();
 const whisper = (str) => "*" + str.toLowerCase() + "*";
 
 // Create a capitalize function that takes a string and transforms it to upper case only for the first letter, and in lowercase for the rest of the string
-const capitalize = (str) => str.charAt(0).toUpperCase() + str.substring(1);
+const capitalize = (str) =>
+    str.charAt(0).toUpperCase() + str.substring(1).toLowerCase();
 
-console.log(capitalize("str"));
+console.log(capitalize("STR"));
