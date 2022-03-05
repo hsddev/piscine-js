@@ -15,7 +15,11 @@ t = time
 const getAcceleration = (obj) => {
     let a;
 
-    if (Object.keys(obj).length == 0 || Object.keys(obj).length == 3) {
+    if (
+        Object.keys(obj).length == 2 ||
+        Object.keys(obj).length == 4 ||
+        Object.keys(obj).length == 5
+    ) {
         if (obj.f !== undefined && obj.m !== undefined) {
             a = obj.f / obj.m;
         } else if (obj.Δv && obj.Δt) {
@@ -32,4 +36,4 @@ const getAcceleration = (obj) => {
     return a;
 };
 
-console.log(getAcceleration({ f: 2, t: 4 }));
+console.log(getAcceleration({ d: 10, f: 2, Δv: 100 }));
