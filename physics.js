@@ -15,11 +15,13 @@ t = time
 const getAcceleration = (obj) => {
     let a;
 
-    if ((obj.F && obj.m) || (obj.Δv && obj.Δt) || obj.d || t) {
-        a = obj.F / obj.m || obj.Δv / obj.Δt || (2 * obj.d) / t;
+    if ((obj.F && obj.m) || (obj.Δv && obj.Δt) || obj.d || obj.t) {
+        a = obj.F / obj.m || obj.Δv / obj.Δt || (2 * obj.d) / obj.t;
     } else {
         a = "impossible";
     }
 
     return a;
 };
+
+console.log(getAcceleration({}));
