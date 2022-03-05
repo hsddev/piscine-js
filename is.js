@@ -1,6 +1,6 @@
 const is = {};
 
-is.num = 5;
+is.num = () => 5;
 is.nan = NaN;
 is.bool = true;
 is.str = "";
