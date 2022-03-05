@@ -20,12 +20,10 @@ const getAcceleration = (obj) => {
     } else if (obj.Δv !== undefined && obj.Δt !== undefined) {
         a = obj.Δv / obj.Δt;
     } else if (obj.d !== undefined && obj.t !== undefined) {
-        a = (2 * obj.d) / obj.t;
+        a = (2 * obj.d) / obj.t ** 2;
     } else {
         a = "impossible";
     }
 
     return a;
 };
-
-console.log(getAcceleration({ d: 10, f: 2, Δv: 100 }));
