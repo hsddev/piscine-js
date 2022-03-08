@@ -1,0 +1,17 @@
+/*
+Write a bunch of function to move from one type to another
+
+arrToSet from Array to Set
+arrToStr from Array to String
+setToArr from Set to Array
+setToStr from Set to String
+strToArr from String to Array
+strToSet from String to Set
+mapToObj from Map to Object
+objToArr from Object to Array
+objToMap from Object to Map
+arrToObj from Array to Object
+strToObj from String to Object
+and finally write a function superTypeOf that unlike typeof return a different value for advanced types like Map and Set
+
+*/
