@@ -1,9 +1,13 @@
 const multiply = (a, b) => {
+    if (a == 0 || b == 0) return 0;
+
     let result = 0;
-    for (var i = 0; i < b; i++) {
-        result += a;
+
+    for (var i = 0; i < Math.abs(b); i++) {
+        result += Math.abs(a);
     }
-    return result;
+
+    return a < 0 || b < 0 ? -result : result;
 };
 
 const divide = (a, b) => {
