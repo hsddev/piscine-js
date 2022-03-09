@@ -9,6 +9,8 @@ const multiply = (a, b) => {
 
     if (a < 0 && b < 0) return result;
     if (a < 0 || b < 0) return -result;
+
+    return result;
 };
 
 const divide = (a, b) => {
