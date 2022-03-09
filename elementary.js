@@ -7,7 +7,8 @@ const multiply = (a, b) => {
         result += Math.abs(a);
     }
 
-    return a < 0 || b < 0 ? -result : result;
+    if (a < 0 && b < 0) return result;
+    if (a < 0 || b < 0) return -result;
 };
 
 const divide = (a, b) => {
