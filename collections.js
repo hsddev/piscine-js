@@ -15,9 +15,7 @@ map.set(4, "d");
 
 // arrToSet function to convert an array to Set
 const arrToSet = (arr) => {
-    for (var i = 0; i < arr.length; i++) {
-        return set.add(arr[i]);
-    }
+    return new Set(arr);
 }; // -> Set { 1, 2, 3 }
 
 // arrToStr function to convert an array to a string
