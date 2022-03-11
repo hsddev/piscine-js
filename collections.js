@@ -47,9 +47,7 @@ const strToArr = (str) => {
 
 // strToSet function to convert a string to Set
 const strToSet = (str) => {
-    return str.split("").map((x) => {
-        set.add(x);
-    });
+    return new Set(strToArr(str));
 }; // -> Set { 'h', 'e', 'l', 'o' }
 
 const mapToObj = (map) => {
