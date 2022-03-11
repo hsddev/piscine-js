@@ -94,7 +94,11 @@ const superTypeOf = (x) => {
             type = "Function";
             break;
         case "object":
-            x.isArray == true ? (type = "Array") : (type = "Object");
+            if (Array.isArray(x) == true) {
+                type = "Array";
+            } else {
+                type = "Object";
+            }
             if (x instanceof Set) type = "Set";
             if (x instanceof Map) type = "Map";
             break;
