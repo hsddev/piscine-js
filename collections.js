@@ -106,11 +106,11 @@ const superTypeOf = (x) => {
         case "number":
             type = "Number";
             break;
-        case undefined:
+        case "undefined":
             type = "undefined";
             break;
     }
     return type;
 };
 
-console.log(superTypeOf(null));
+console.log(superTypeOf(undefined));
