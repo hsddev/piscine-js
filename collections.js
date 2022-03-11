@@ -101,16 +101,16 @@ const superTypeOf = (x) => {
             }
             if (x instanceof Set) type = "Set";
             if (x instanceof Map) type = "Map";
+            if (x == null) type = "null";
             break;
         case "number":
             type = "Number";
             break;
-        case "null":
-            type = "null";
-            break;
-        case "undefined":
+        case undefined:
             type = "undefined";
             break;
     }
     return type;
 };
+
+console.log(superTypeOf(null));
