@@ -70,11 +70,7 @@ const objToMap = (obj) => {
 
 // arrToObj function to convert an array to object
 const arrToObj = (arr) => {
-    var obj = {};
-    for (var i = 0; i < arr.length; i++) {
-        obj[arr[i]] = arr[i];
-    }
-    return obj;
+    return Object.assign({}, arr);
 }; // -> { '0': 1, '1': 2, '2': 1, '3': 3 }
 
 // strToObj function to convert a string to object
