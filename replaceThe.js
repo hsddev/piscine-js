@@ -8,3 +8,5 @@ function replaceThe(txt) {
         ? words.join(" ").replace("the", "an")
         : words.join(" ").replace("the", "a");
 }
+
+console.log(replaceThe("give me the book"));
